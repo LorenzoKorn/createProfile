@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UserProfile</string>
+    <string name="open_gallery">Open picture gallery</string>
+    <string name="confirm">confirm</string>
+    <string name="first_name">first name</string>
+    <string name="second_name">second name</string>
+    <string name="description">description</string>
+</resources>
