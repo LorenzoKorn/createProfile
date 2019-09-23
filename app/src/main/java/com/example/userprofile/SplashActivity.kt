@@ -5,12 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 
+const val GALLERY_REQUEST_CODE = 100
+
 class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+        // opens the other screen after 1 second
         Handler().postDelayed({
             startActivity(
                 Intent(this@SplashActivity, CreateProfileActivity::class.java)
