@@ -1,11 +1,13 @@
 package com.example.userprofile
 
+import android.net.Uri
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class Profile(
-    var firstname: String,
-    var secondname: String,
-    var description: String
+    val firstname: String,
+    val secondname: String,
+    val description: String,
+    val imageUri: Uri? // can be null
 ) : Parcelable

@@ -25,7 +25,7 @@ class CreateProfileActivity : AppCompatActivity() {
         }
 
         confirm_btn.setOnClickListener {
-            // save your profile
+            onConfirmClick()
         }
     }
 
@@ -34,6 +34,21 @@ class CreateProfileActivity : AppCompatActivity() {
         val intent = Intent(Intent.ACTION_PICK)
         intent.type = "image/*"
         startActivityForResult(intent, GALLERY_REQUEST_CODE)
+    }
+
+    private fun onConfirmClick() {
+        // creates a profile object
+        val profile = Profile(
+            fname_input.text.toString(),
+            sname_input.text.toString(),
+            description_input.text.toString(),
+            profileImageUri
+        )
+
+        // opens your new profile screen
+        val profileActivityIntent = Intent(this, ProfileActivity::class.java)
+        profileActivityIntent.putExtra(ProfileActivity.PROFILE_EXTRA, profile)
+        startActivity(profileActivityIntent)
     }
 
     @SuppressLint("MissingSuperCall")

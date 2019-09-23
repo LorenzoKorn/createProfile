@@ -8,4 +8,6 @@
     <string name="user_profile_kotlin">User profile kotlin</string>
     <string name="image">image</string>
     <string name="profile_image">profile image</string>
+    <string name="full_name">%1$s %2$s</string>
+    <string name="your_profile">This is your profile!</string>
 </resources>
