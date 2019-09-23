@@ -5,4 +5,6 @@
     <string name="first_name">first name</string>
     <string name="second_name">second name</string>
     <string name="description">description</string>
+    <string name="user_profile_kotlin">User profile kotlin</string>
+    <string name="image">image</string>
 </resources>
